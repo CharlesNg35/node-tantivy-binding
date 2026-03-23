@@ -90,11 +90,5 @@
     "singleQuote": true,
     "arrowParens": "always"
   },
-  "packageManager": "yarn@4.12.0",
-  "optionalDependencies": {
-    "@pngwasi/node-tantivy-binding-darwin-arm64": "0.3.0",
-    "@pngwasi/node-tantivy-binding-darwin-x64": "0.3.0",
-    "@pngwasi/node-tantivy-binding-win32-x64-msvc": "0.3.0",
-    "@pngwasi/node-tantivy-binding-linux-x64-gnu": "0.3.0"
-  }
+  "packageManager": "yarn@4.12.0"
 }
