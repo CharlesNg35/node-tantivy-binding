@@ -5,7 +5,7 @@
 ## Building an index and populating it
 
 ```typescript
-import { SchemaBuilder, Index } from '@oxdev03/node-tantivy-binding'
+import { SchemaBuilder, Index } from '@pngwasi/node-tantivy-binding'
 
 // Declaring our schema.
 const schemaBuilder = new SchemaBuilder()
@@ -27,7 +27,7 @@ To have a persistent index, use the path parameter to store the index on the dis
 <!-- example:persistent-index source:../examples/persistent-index.ts -->
 
 ```typescript
-import { SchemaBuilder, Index } from '@oxdev03/node-tantivy-binding'
+import { SchemaBuilder, Index } from '@pngwasi/node-tantivy-binding'
 import * as os from 'os'
 import * as path from 'path'
 import * as fs from 'fs'
@@ -68,7 +68,7 @@ To use the above tokenizers, simply provide them as a parameter to `addTextField
 <!-- example:custom-tokenizer source:../examples/custom-tokenizer.ts -->
 
 ```typescript
-import { SchemaBuilder } from '@oxdev03/node-tantivy-binding'
+import { SchemaBuilder } from '@pngwasi/node-tantivy-binding'
 
 const schemaBuilderTok = new SchemaBuilder()
 schemaBuilderTok.addTextField('body', { stored: true, tokenizerName: 'en_stem' })
@@ -85,7 +85,7 @@ console.assert(schemaJson.includes('body'), 'Schema should contain body field')
 <!-- example:adding-document source:../examples/adding-document.ts -->
 
 ```typescript
-import { SchemaBuilder, Index, Document } from '@oxdev03/node-tantivy-binding'
+import { SchemaBuilder, Index, Document } from '@pngwasi/node-tantivy-binding'
 
 const schemaBuilder = new SchemaBuilder()
 schemaBuilder.addTextField('title', { stored: true })
@@ -139,7 +139,7 @@ First you need to get a searcher for the index:
 <!-- example:basic-search source:../examples/basic-search.ts -->
 
 ```typescript
-import { SchemaBuilder, Index, Document } from '@oxdev03/node-tantivy-binding'
+import { SchemaBuilder, Index, Document } from '@pngwasi/node-tantivy-binding'
 
 // Setup index and add document (from previous examples)
 const schemaBuilder = new SchemaBuilder()
@@ -235,7 +235,7 @@ It is impossible to express this query using the query parser. Instead, you can 
 <!-- example:complex-query source:../examples/complex-query.ts -->
 
 ```typescript
-import { SchemaBuilder, Index, Document, Query, Occur } from '@oxdev03/node-tantivy-binding'
+import { SchemaBuilder, Index, Document, Query, Occur } from '@pngwasi/node-tantivy-binding'
 
 // Setup index (from previous examples)
 const schemaBuilder = new SchemaBuilder()
@@ -295,7 +295,7 @@ When working with search queries, it's often useful to understand why a particul
 <!-- example:query-explanation source:../examples/query-explanation.ts -->
 
 ```typescript
-import { SchemaBuilder, Index, Document, Query, Occur } from '@oxdev03/node-tantivy-binding'
+import { SchemaBuilder, Index, Document, Query, Occur } from '@pngwasi/node-tantivy-binding'
 
 // Setup index and complex query (from previous examples)
 const schemaBuilder = new SchemaBuilder()
@@ -385,7 +385,7 @@ Let's revisit the query `"fish days"` in our [example](#building-and-executing-q
 <!-- example:snippet-generation source:../examples/snippet-generation.ts -->
 
 ```typescript
-import { SchemaBuilder, Index, Document, SnippetGenerator } from '@oxdev03/node-tantivy-binding'
+import { SchemaBuilder, Index, Document, SnippetGenerator } from '@pngwasi/node-tantivy-binding'
 
 // Setup index (from previous examples)
 const schemaBuilder = new SchemaBuilder()
@@ -463,7 +463,7 @@ First, let's create a text analyzer. As explained further down, a text analyzer 
 <!-- example:custom-analyzer source:../examples/custom-analyzer.ts -->
 
 ```typescript
-import { TextAnalyzerBuilder, TokenizerStatic, FilterStatic, Index, SchemaBuilder } from '@oxdev03/node-tantivy-binding'
+import { TextAnalyzerBuilder, TokenizerStatic, FilterStatic, Index, SchemaBuilder } from '@pngwasi/node-tantivy-binding'
 
 const myAnalyzer = new TextAnalyzerBuilder(
   // Create a `Tokenizer` instance.
