@@ -1,10 +1,10 @@
 {
-  "name": "@oxdev03/node-tantivy-binding",
-  "version": "0.2.1",
+  "name": "@pngwasi/node-tantivy-binding",
+  "version": "0.3.0",
   "description": "Node.js bindings for Tantivy. Provides indexing, querying, and advanced search features with TypeScript support.",
   "main": "index.js",
   "types": "index.d.ts",
-  "repository": "https://github.com/oxdev03/node-tantivy-binding",
+  "repository": "https://github.com/CharlesNg35/node-tantivy-binding",
   "license": "MIT",
   "keywords": [
     "nodejs",
