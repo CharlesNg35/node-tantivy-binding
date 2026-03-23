@@ -78,10 +78,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxdev03/node-tantivy-binding-android-arm64')
-        const bindingPackageVersion = require('@oxdev03/node-tantivy-binding-android-arm64/package.json').version
-        if (bindingPackageVersion !== '0.2.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 0.2.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@pngwasi/node-tantivy-binding-android-arm64')
+        const bindingPackageVersion = require('@pngwasi/node-tantivy-binding-android-arm64/package.json').version
+        if (bindingPackageVersion !== '0.3.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 0.3.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -94,10 +94,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxdev03/node-tantivy-binding-android-arm-eabi')
-        const bindingPackageVersion = require('@oxdev03/node-tantivy-binding-android-arm-eabi/package.json').version
-        if (bindingPackageVersion !== '0.2.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 0.2.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@pngwasi/node-tantivy-binding-android-arm-eabi')
+        const bindingPackageVersion = require('@pngwasi/node-tantivy-binding-android-arm-eabi/package.json').version
+        if (bindingPackageVersion !== '0.3.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 0.3.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -114,10 +114,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxdev03/node-tantivy-binding-win32-x64-msvc')
-        const bindingPackageVersion = require('@oxdev03/node-tantivy-binding-win32-x64-msvc/package.json').version
-        if (bindingPackageVersion !== '0.2.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 0.2.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@pngwasi/node-tantivy-binding-win32-x64-msvc')
+        const bindingPackageVersion = require('@pngwasi/node-tantivy-binding-win32-x64-msvc/package.json').version
+        if (bindingPackageVersion !== '0.3.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 0.3.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -130,10 +130,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxdev03/node-tantivy-binding-win32-ia32-msvc')
-        const bindingPackageVersion = require('@oxdev03/node-tantivy-binding-win32-ia32-msvc/package.json').version
-        if (bindingPackageVersion !== '0.2.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 0.2.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@pngwasi/node-tantivy-binding-win32-ia32-msvc')
+        const bindingPackageVersion = require('@pngwasi/node-tantivy-binding-win32-ia32-msvc/package.json').version
+        if (bindingPackageVersion !== '0.3.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 0.3.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -146,10 +146,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxdev03/node-tantivy-binding-win32-arm64-msvc')
-        const bindingPackageVersion = require('@oxdev03/node-tantivy-binding-win32-arm64-msvc/package.json').version
-        if (bindingPackageVersion !== '0.2.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 0.2.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@pngwasi/node-tantivy-binding-win32-arm64-msvc')
+        const bindingPackageVersion = require('@pngwasi/node-tantivy-binding-win32-arm64-msvc/package.json').version
+        if (bindingPackageVersion !== '0.3.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 0.3.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -165,10 +165,10 @@ function requireNative() {
       loadErrors.push(e)
     }
     try {
-      const binding = require('@oxdev03/node-tantivy-binding-darwin-universal')
-      const bindingPackageVersion = require('@oxdev03/node-tantivy-binding-darwin-universal/package.json').version
-      if (bindingPackageVersion !== '0.2.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-        throw new Error(`Native binding package version mismatch, expected 0.2.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+      const binding = require('@pngwasi/node-tantivy-binding-darwin-universal')
+      const bindingPackageVersion = require('@pngwasi/node-tantivy-binding-darwin-universal/package.json').version
+      if (bindingPackageVersion !== '0.3.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+        throw new Error(`Native binding package version mismatch, expected 0.3.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
       }
       return binding
     } catch (e) {
@@ -181,10 +181,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxdev03/node-tantivy-binding-darwin-x64')
-        const bindingPackageVersion = require('@oxdev03/node-tantivy-binding-darwin-x64/package.json').version
-        if (bindingPackageVersion !== '0.2.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 0.2.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@pngwasi/node-tantivy-binding-darwin-x64')
+        const bindingPackageVersion = require('@pngwasi/node-tantivy-binding-darwin-x64/package.json').version
+        if (bindingPackageVersion !== '0.3.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 0.3.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -197,10 +197,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxdev03/node-tantivy-binding-darwin-arm64')
-        const bindingPackageVersion = require('@oxdev03/node-tantivy-binding-darwin-arm64/package.json').version
-        if (bindingPackageVersion !== '0.2.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 0.2.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@pngwasi/node-tantivy-binding-darwin-arm64')
+        const bindingPackageVersion = require('@pngwasi/node-tantivy-binding-darwin-arm64/package.json').version
+        if (bindingPackageVersion !== '0.3.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 0.3.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -217,10 +217,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxdev03/node-tantivy-binding-freebsd-x64')
-        const bindingPackageVersion = require('@oxdev03/node-tantivy-binding-freebsd-x64/package.json').version
-        if (bindingPackageVersion !== '0.2.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 0.2.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@pngwasi/node-tantivy-binding-freebsd-x64')
+        const bindingPackageVersion = require('@pngwasi/node-tantivy-binding-freebsd-x64/package.json').version
+        if (bindingPackageVersion !== '0.3.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 0.3.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -233,10 +233,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxdev03/node-tantivy-binding-freebsd-arm64')
-        const bindingPackageVersion = require('@oxdev03/node-tantivy-binding-freebsd-arm64/package.json').version
-        if (bindingPackageVersion !== '0.2.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 0.2.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@pngwasi/node-tantivy-binding-freebsd-arm64')
+        const bindingPackageVersion = require('@pngwasi/node-tantivy-binding-freebsd-arm64/package.json').version
+        if (bindingPackageVersion !== '0.3.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 0.3.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -254,10 +254,10 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@oxdev03/node-tantivy-binding-linux-x64-musl')
-          const bindingPackageVersion = require('@oxdev03/node-tantivy-binding-linux-x64-musl/package.json').version
-          if (bindingPackageVersion !== '0.2.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-            throw new Error(`Native binding package version mismatch, expected 0.2.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+          const binding = require('@pngwasi/node-tantivy-binding-linux-x64-musl')
+          const bindingPackageVersion = require('@pngwasi/node-tantivy-binding-linux-x64-musl/package.json').version
+          if (bindingPackageVersion !== '0.3.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+            throw new Error(`Native binding package version mismatch, expected 0.3.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
           return binding
         } catch (e) {
@@ -270,10 +270,10 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@oxdev03/node-tantivy-binding-linux-x64-gnu')
-          const bindingPackageVersion = require('@oxdev03/node-tantivy-binding-linux-x64-gnu/package.json').version
-          if (bindingPackageVersion !== '0.2.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-            throw new Error(`Native binding package version mismatch, expected 0.2.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+          const binding = require('@pngwasi/node-tantivy-binding-linux-x64-gnu')
+          const bindingPackageVersion = require('@pngwasi/node-tantivy-binding-linux-x64-gnu/package.json').version
+          if (bindingPackageVersion !== '0.3.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+            throw new Error(`Native binding package version mismatch, expected 0.3.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
           return binding
         } catch (e) {
@@ -288,10 +288,10 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@oxdev03/node-tantivy-binding-linux-arm64-musl')
-          const bindingPackageVersion = require('@oxdev03/node-tantivy-binding-linux-arm64-musl/package.json').version
-          if (bindingPackageVersion !== '0.2.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-            throw new Error(`Native binding package version mismatch, expected 0.2.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+          const binding = require('@pngwasi/node-tantivy-binding-linux-arm64-musl')
+          const bindingPackageVersion = require('@pngwasi/node-tantivy-binding-linux-arm64-musl/package.json').version
+          if (bindingPackageVersion !== '0.3.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+            throw new Error(`Native binding package version mismatch, expected 0.3.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
           return binding
         } catch (e) {
@@ -304,10 +304,10 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@oxdev03/node-tantivy-binding-linux-arm64-gnu')
-          const bindingPackageVersion = require('@oxdev03/node-tantivy-binding-linux-arm64-gnu/package.json').version
-          if (bindingPackageVersion !== '0.2.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-            throw new Error(`Native binding package version mismatch, expected 0.2.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+          const binding = require('@pngwasi/node-tantivy-binding-linux-arm64-gnu')
+          const bindingPackageVersion = require('@pngwasi/node-tantivy-binding-linux-arm64-gnu/package.json').version
+          if (bindingPackageVersion !== '0.3.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+            throw new Error(`Native binding package version mismatch, expected 0.3.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
           return binding
         } catch (e) {
@@ -322,10 +322,10 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@oxdev03/node-tantivy-binding-linux-arm-musleabihf')
-          const bindingPackageVersion = require('@oxdev03/node-tantivy-binding-linux-arm-musleabihf/package.json').version
-          if (bindingPackageVersion !== '0.2.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-            throw new Error(`Native binding package version mismatch, expected 0.2.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+          const binding = require('@pngwasi/node-tantivy-binding-linux-arm-musleabihf')
+          const bindingPackageVersion = require('@pngwasi/node-tantivy-binding-linux-arm-musleabihf/package.json').version
+          if (bindingPackageVersion !== '0.3.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+            throw new Error(`Native binding package version mismatch, expected 0.3.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
           return binding
         } catch (e) {
@@ -338,10 +338,10 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@oxdev03/node-tantivy-binding-linux-arm-gnueabihf')
-          const bindingPackageVersion = require('@oxdev03/node-tantivy-binding-linux-arm-gnueabihf/package.json').version
-          if (bindingPackageVersion !== '0.2.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-            throw new Error(`Native binding package version mismatch, expected 0.2.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+          const binding = require('@pngwasi/node-tantivy-binding-linux-arm-gnueabihf')
+          const bindingPackageVersion = require('@pngwasi/node-tantivy-binding-linux-arm-gnueabihf/package.json').version
+          if (bindingPackageVersion !== '0.3.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+            throw new Error(`Native binding package version mismatch, expected 0.3.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
           return binding
         } catch (e) {
@@ -356,10 +356,10 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@oxdev03/node-tantivy-binding-linux-riscv64-musl')
-          const bindingPackageVersion = require('@oxdev03/node-tantivy-binding-linux-riscv64-musl/package.json').version
-          if (bindingPackageVersion !== '0.2.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-            throw new Error(`Native binding package version mismatch, expected 0.2.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+          const binding = require('@pngwasi/node-tantivy-binding-linux-riscv64-musl')
+          const bindingPackageVersion = require('@pngwasi/node-tantivy-binding-linux-riscv64-musl/package.json').version
+          if (bindingPackageVersion !== '0.3.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+            throw new Error(`Native binding package version mismatch, expected 0.3.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
           return binding
         } catch (e) {
@@ -372,10 +372,10 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@oxdev03/node-tantivy-binding-linux-riscv64-gnu')
-          const bindingPackageVersion = require('@oxdev03/node-tantivy-binding-linux-riscv64-gnu/package.json').version
-          if (bindingPackageVersion !== '0.2.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-            throw new Error(`Native binding package version mismatch, expected 0.2.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+          const binding = require('@pngwasi/node-tantivy-binding-linux-riscv64-gnu')
+          const bindingPackageVersion = require('@pngwasi/node-tantivy-binding-linux-riscv64-gnu/package.json').version
+          if (bindingPackageVersion !== '0.3.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+            throw new Error(`Native binding package version mismatch, expected 0.3.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
           return binding
         } catch (e) {
@@ -389,10 +389,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxdev03/node-tantivy-binding-linux-ppc64-gnu')
-        const bindingPackageVersion = require('@oxdev03/node-tantivy-binding-linux-ppc64-gnu/package.json').version
-        if (bindingPackageVersion !== '0.2.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 0.2.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@pngwasi/node-tantivy-binding-linux-ppc64-gnu')
+        const bindingPackageVersion = require('@pngwasi/node-tantivy-binding-linux-ppc64-gnu/package.json').version
+        if (bindingPackageVersion !== '0.3.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 0.3.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -405,10 +405,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxdev03/node-tantivy-binding-linux-s390x-gnu')
-        const bindingPackageVersion = require('@oxdev03/node-tantivy-binding-linux-s390x-gnu/package.json').version
-        if (bindingPackageVersion !== '0.2.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 0.2.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@pngwasi/node-tantivy-binding-linux-s390x-gnu')
+        const bindingPackageVersion = require('@pngwasi/node-tantivy-binding-linux-s390x-gnu/package.json').version
+        if (bindingPackageVersion !== '0.3.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 0.3.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -425,10 +425,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxdev03/node-tantivy-binding-openharmony-arm64')
-        const bindingPackageVersion = require('@oxdev03/node-tantivy-binding-openharmony-arm64/package.json').version
-        if (bindingPackageVersion !== '0.2.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 0.2.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@pngwasi/node-tantivy-binding-openharmony-arm64')
+        const bindingPackageVersion = require('@pngwasi/node-tantivy-binding-openharmony-arm64/package.json').version
+        if (bindingPackageVersion !== '0.3.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 0.3.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -441,10 +441,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxdev03/node-tantivy-binding-openharmony-x64')
-        const bindingPackageVersion = require('@oxdev03/node-tantivy-binding-openharmony-x64/package.json').version
-        if (bindingPackageVersion !== '0.2.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 0.2.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@pngwasi/node-tantivy-binding-openharmony-x64')
+        const bindingPackageVersion = require('@pngwasi/node-tantivy-binding-openharmony-x64/package.json').version
+        if (bindingPackageVersion !== '0.3.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 0.3.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -457,10 +457,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxdev03/node-tantivy-binding-openharmony-arm')
-        const bindingPackageVersion = require('@oxdev03/node-tantivy-binding-openharmony-arm/package.json').version
-        if (bindingPackageVersion !== '0.2.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 0.2.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@pngwasi/node-tantivy-binding-openharmony-arm')
+        const bindingPackageVersion = require('@pngwasi/node-tantivy-binding-openharmony-arm/package.json').version
+        if (bindingPackageVersion !== '0.3.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 0.3.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -486,7 +486,7 @@ if (!nativeBinding || process.env.NAPI_RS_FORCE_WASI) {
   }
   if (!nativeBinding) {
     try {
-      nativeBinding = require('@oxdev03/node-tantivy-binding-wasm32-wasi')
+      nativeBinding = require('@pngwasi/node-tantivy-binding-wasm32-wasi')
     } catch (err) {
       if (process.env.NAPI_RS_FORCE_WASI) {
         loadErrors.push(err)

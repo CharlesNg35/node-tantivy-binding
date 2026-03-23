@@ -43,7 +43,7 @@ export function syncFromSource(markdownFile: string): { updated: boolean; change
     // Read the source file, replace the import path, and remove trailing newlines
     const sourceContent = fs
       .readFileSync(sourceFilePath, 'utf-8')
-      .replace("'../index'", "'@oxdev03/node-tantivy-binding'")
+      .replace("'../index'", "'@pngwasi/node-tantivy-binding'")
       .replace(/[\r\n]+$/, '')
     const commentTag = `<!-- example:${ref.name} source:${ref.sourceFile} -->`
 
