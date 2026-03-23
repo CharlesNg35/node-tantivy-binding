@@ -1431,30 +1431,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oxdev03/node-tantivy-binding@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@oxdev03/node-tantivy-binding@workspace:."
-  dependencies:
-    "@emnapi/core": "npm:^1.4.5"
-    "@emnapi/runtime": "npm:^1.4.5"
-    "@napi-rs/cli": "npm:^3.1.4"
-    "@oxc-node/core": "npm:^0.0.35"
-    "@taplo/cli": "npm:^0.7.0"
-    "@tybys/wasm-util": "npm:^0.10.0"
-    "@types/node": "npm:^24.0.0"
-    chalk: "npm:^5.4.1"
-    husky: "npm:^9.1.7"
-    lint-staged: "npm:^16.1.2"
-    marked: "npm:^17.0.0"
-    npm-run-all2: "npm:^8.0.4"
-    oxlint: "npm:^1.8.0"
-    prettier: "npm:^3.6.2"
-    tinybench: "npm:^6.0.0"
-    typescript: "npm:^5.8.3"
-    vitest: "npm:^4.0.0"
-  languageName: unknown
-  linkType: soft
-
 "@oxlint-tsgolint/darwin-arm64@npm:0.0.2":
   version: 0.0.2
   resolution: "@oxlint-tsgolint/darwin-arm64@npm:0.0.2"
@@ -1559,6 +1535,30 @@ __metadata:
   checksum: 10c0/5bd7576bb1b38a47a7fc7b51ac9f38748e772beebc56200450c4a817d712232b8f1d3ef70532c80840243c657d491cf6a6be1e3a214cff907645819fdc34aadd
   languageName: node
   linkType: hard
+
+"@pngwasi/node-tantivy-binding@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@pngwasi/node-tantivy-binding@workspace:."
+  dependencies:
+    "@emnapi/core": "npm:^1.4.5"
+    "@emnapi/runtime": "npm:^1.4.5"
+    "@napi-rs/cli": "npm:^3.1.4"
+    "@oxc-node/core": "npm:^0.0.35"
+    "@taplo/cli": "npm:^0.7.0"
+    "@tybys/wasm-util": "npm:^0.10.0"
+    "@types/node": "npm:^24.0.0"
+    chalk: "npm:^5.4.1"
+    husky: "npm:^9.1.7"
+    lint-staged: "npm:^16.1.2"
+    marked: "npm:^17.0.0"
+    npm-run-all2: "npm:^8.0.4"
+    oxlint: "npm:^1.8.0"
+    prettier: "npm:^3.6.2"
+    tinybench: "npm:^6.0.0"
+    typescript: "npm:^5.8.3"
+    vitest: "npm:^4.0.0"
+  languageName: unknown
+  linkType: soft
 
 "@rollup/rollup-android-arm-eabi@npm:4.46.4":
   version: 4.46.4
