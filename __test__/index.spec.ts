@@ -1252,7 +1252,7 @@ describe('TestSnippets', () => {
     const schemaBuilder = new SchemaBuilder()
     schemaBuilder.addTextField('content', { stored: true, indexRecordOption: 'position' })
     const schema = schemaBuilder.build()
-    const idx = Index.create(schema)
+    const idx = new Index(schema)
     const writer = idx.writer(50_000_000)
 
     // Text with accents: "é" is 2 bytes in UTF-8 but 1 JS char
