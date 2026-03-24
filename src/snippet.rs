@@ -26,17 +26,24 @@ impl Snippet {
     Ok(self.inner.to_html())
   }
 
+  /// Returns highlighted ranges as **character offsets** (not byte offsets).
+  /// Tantivy internally uses byte ranges on UTF-8 strings; this method
+  /// converts them so they can be used directly with JS string.slice().
   #[napi]
   pub fn highlighted(&self) -> Vec<Range> {
+    let fragment = self.inner.fragment();
     let highlighted = self.inner.highlighted();
-    let results = highlighted
+    highlighted
       .iter()
-      .map(|r| Range {
-        start: r.start as u32,
-        end: r.end as u32,
+      .map(|r| {
+        let start_chars = fragment[..r.start].chars().count() as u32;
+        let end_chars = fragment[..r.end].chars().count() as u32;
+        Range {
+          start: start_chars,
+          end: end_chars,
+        }
       })
-      .collect::<Vec<_>>();
-    results
+      .collect()
   }
 
   #[napi]
