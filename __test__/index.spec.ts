@@ -1246,6 +1246,43 @@ describe('TestSnippets', () => {
     const htmlSnippet = snippet.toHtml()
     expect(htmlSnippet.toLowerCase()).toContain('sea')
   })
+
+  it('test_highlighted_returns_char_offsets_not_byte_offsets', () => {
+    // Create an index with multibyte Unicode characters (accents, CJK, etc.)
+    const schemaBuilder = new SchemaBuilder()
+    schemaBuilder.addTextField('content', { stored: true, indexRecordOption: 'position' })
+    const schema = schemaBuilder.build()
+    const idx = Index.create(schema)
+    const writer = idx.writer(50_000_000)
+
+    // Text with accents: "é" is 2 bytes in UTF-8 but 1 JS char
+    const doc = new Document()
+    doc.addText('content', "L'éternité bienheureuse nous attend dans l'éternité divine")
+    writer.addDocument(doc)
+    writer.commit()
+    idx.reload()
+
+    const query = Query.termQuery(schema, 'content', 'éternité')
+    const searcher = idx.searcher()
+    const generator = SnippetGenerator.create(searcher, query, schema, 'content')
+    generator.setMaxNumChars(500)
+
+    const result = searcher.search(query)
+    expect(result.hits.length).toBe(1)
+
+    const searchedDoc = searcher.doc(result.hits[0].docAddress)
+    const snippet = generator.snippetFromDoc(searchedDoc)
+    const fragment = snippet.fragment()
+    const highlights = snippet.highlighted()
+
+    expect(highlights.length).toBeGreaterThanOrEqual(2)
+
+    // Each highlight should correctly slice the fragment using JS string positions
+    for (const h of highlights) {
+      const sliced = fragment.slice(h.start, h.end)
+      expect(sliced.toLowerCase()).toBe('éternité')
+    }
+  })
 })
 
 describe('TestQuery', () => {
